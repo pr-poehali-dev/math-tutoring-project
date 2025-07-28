@@ -303,7 +303,7 @@ const Index = () => {
             <div className="relative">
               <div className="relative">
                 <img 
-                  src="/img/66599037-2738-4cc5-87c3-030f15f48efa.jpg" 
+                  src="https://cdn.poehali.dev/files/2f0403d9-c3d4-4255-a534-e4d78a6d8c3e.png" 
                   alt="Преподаватель математики - студент ДВФУ" 
                   className="rounded-2xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
                 />
