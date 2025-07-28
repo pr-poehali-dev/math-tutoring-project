@@ -143,38 +143,321 @@ const Index = () => {
             </Card>
           </div>
 
+          {/* Detailed Curriculum */}
           <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
-            <h4 className="text-2xl font-montserrat font-bold text-gray-800 mb-6">
-              Что включает личный кабинет:
+            <h4 className="text-2xl font-montserrat font-bold text-gray-800 mb-8 text-center">
+              Подробная программа курса - 25 уроков
             </h4>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start space-x-4">
-                <Icon name="FileText" className="text-orange-500 mt-1" size={20} />
-                <div>
-                  <h5 className="font-montserrat font-semibold text-gray-800">Теория с примерами</h5>
-                  <p className="text-gray-600 font-open-sans">Подробные конспекты с разборами задач</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Icon name="Video" className="text-turquoise-500 mt-1" size={20} />
-                <div>
-                  <h5 className="font-montserrat font-semibold text-gray-800">Записи занятий</h5>
-                  <p className="text-gray-600 font-open-sans">Видеозаписи всех проведенных уроков</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Icon name="PenTool" className="text-orange-500 mt-1" size={20} />
-                <div>
-                  <h5 className="font-montserrat font-semibold text-gray-800">Домашние задания</h5>
-                  <p className="text-gray-600 font-open-sans">Персональные задачи для закрепления</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-4">
-                <Icon name="TrendingUp" className="text-turquoise-500 mt-1" size={20} />
-                <div>
-                  <h5 className="font-montserrat font-semibold text-gray-800">Отслеживание прогресса</h5>
-                  <p className="text-gray-600 font-open-sans">Система баллов и подготовка к призам</p>
-                </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Урок 1 */}
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 1</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Обыкновенные дроби</li>
+                    <li>• Десятичные дроби</li>
+                    <li className="text-orange-600 font-semibold">• Практика</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Урок 2 */}
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 2</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Смежные и вертикальные углы</li>
+                    <li>• Признаки равенства треугольников</li>
+                    <li>• Медиана, биссектриса, высота</li>
+                    <li>• Равнобедренный треугольник</li>
+                    <li>• Параллельные прямые</li>
+                    <li>• Сумма углов треугольника</li>
+                    <li>• Внешний угол треугольника</li>
+                    <li>• Свойства прямоугольных треугольников</li>
+                    <li className="text-turquoise-600 font-semibold">• Практика</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Урок 3 */}
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 3</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Неравенство треугольников</li>
+                    <li>• Расстояние от точки до прямой</li>
+                    <li>• Хорда, окружность, радиус, касательная, секущая</li>
+                    <li>• Теорема о радиусе и о касательной</li>
+                    <li>• Свойства диаметров и хорд окружности</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Уроки 4-6 */}
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 4</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Линейные уравнения</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 5</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Параллелограмм (определение и его свойства)</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 6</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Линейная функция и обратная пропорциональность</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Уроки 7-9 */}
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 7</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Трапеция</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 8</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Степень с натуральным и целым показателем</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 9</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Повторяем темы по геометрии</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Уроки 10-12 */}
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 10</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Прямоугольник, ромб, квадрат</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 11</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Вероятность</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 12</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Площадь фигур</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Уроки 13-15 */}
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 13</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Квадратные корни</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 14</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Теорема Пифагора</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 15</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Квадратные уравнения</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Уроки 16-18 */}
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 16</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Повторяем темы по алгебре</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 17</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Подобные треугольники</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-turquoise-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 18</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Линейные неравенства</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Урок 19 */}
+              <Card className="border border-orange-200 hover:shadow-md transition-shadow">
+                <CardHeader className="pb-3">
+                  <CardTitle className="font-montserrat text-lg text-orange-600">Урок 19</CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                    <li>• Тригонометрия</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Финальные уроки 20-25 */}
+            <div className="mt-8 pt-8 border-t border-gray-200">
+              <h5 className="text-xl font-montserrat font-bold text-gray-800 mb-6 text-center">
+                Заключительный этап - подготовка к экзамену
+              </h5>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <Card className="border-2 border-gradient-to-r from-orange-400 to-turquoise-400 hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-montserrat text-lg bg-gradient-to-r from-orange-600 to-turquoise-600 bg-clip-text text-transparent">Урок 20</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                      <li>• Центральный угол</li>
+                      <li>• Вписанный угол</li>
+                      <li>• Описанная окружность</li>
+                      <li>• Вписанная окружность</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-orange-300 hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-montserrat text-lg text-orange-600">Урок 21</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                      <li className="font-semibold text-orange-600">• Решаем пробник</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-turquoise-300 hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 22</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                      <li>• Окружность и круг</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-orange-300 hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-montserrat text-lg text-orange-600">Урок 23</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                      <li>• Квадратичная функция и квадратичные неравенства</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-turquoise-300 hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-montserrat text-lg text-turquoise-600">Урок 24</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                      <li className="font-semibold text-turquoise-600">• Решаем пробник</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-2 border-gradient-to-r from-orange-400 to-turquoise-400 hover:shadow-lg transition-shadow">
+                  <CardHeader className="pb-3">
+                    <CardTitle className="font-montserrat text-lg bg-gradient-to-r from-orange-600 to-turquoise-600 bg-clip-text text-transparent">Урок 25</CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <ul className="text-sm font-open-sans text-gray-700 space-y-1">
+                      <li className="font-semibold bg-gradient-to-r from-orange-600 to-turquoise-600 bg-clip-text text-transparent">• Решаем пробник и разбираем все вопросы</li>
+                    </ul>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
