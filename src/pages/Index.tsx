@@ -301,16 +301,24 @@ const Index = () => {
             </div>
             
             <div className="relative">
-              <Card className="bg-white shadow-2xl p-8">
+              <div className="relative">
+                <img 
+                  src="/img/66599037-2738-4cc5-87c3-030f15f48efa.jpg" 
+                  alt="Преподаватель математики - студент ДВФУ" 
+                  className="rounded-2xl shadow-2xl w-full max-w-md mx-auto transform hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-orange-500 to-turquoise-500 text-white p-4 rounded-full shadow-lg">
+                  <Icon name="GraduationCap" size={24} />
+                </div>
+              </div>
+              
+              <Card className="bg-white shadow-lg p-6 mt-8">
                 <CardContent className="p-0">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 bg-gradient-to-r from-orange-500 to-turquoise-500 rounded-full flex items-center justify-center mx-auto">
-                      <Icon name="GraduationCap" className="text-white" size={32} />
-                    </div>
-                    <h4 className="text-xl font-montserrat font-bold text-gray-800">
+                  <div className="text-center space-y-3">
+                    <h4 className="text-lg font-montserrat font-bold text-gray-800">
                       Современный подход к обучению
                     </h4>
-                    <p className="font-open-sans text-gray-600">
+                    <p className="font-open-sans text-gray-600 text-sm">
                       Сочетаю классические методы с современными технологиями и мотивационными системами
                     </p>
                   </div>
