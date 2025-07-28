@@ -201,8 +201,6 @@ const Index = () => {
   };
 
   const currentLessonData = lessons.find(lesson => lesson.id === currentLesson);
-
-const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 to-turquoise-50">
       {/* Header */}
