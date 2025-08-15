@@ -628,54 +628,60 @@ const Index = () => {
                   Все поля обязательны для заполнения
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+              <CardContent>
+                <form
+                  action="https://formspree.io/f/mldlvpgz"
+                  method="POST"
+                  className="space-y-6"
+                >
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
+                        Имя
+                      </label>
+                      <Input name="name" placeholder="Введите ваше имя" required />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
+                        Возраст
+                      </label>
+                      <Input name="age" placeholder="Сколько лет" type="number" required />
+                    </div>
+                  </div>
+                  
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
-                      Имя
+                      Телефон
                     </label>
-                    <Input placeholder="Введите ваше имя" />
+                    <Input name="phone" placeholder="+7 (999) 123-45-67" required />
                   </div>
+                  
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
-                      Возраст
+                      Email
                     </label>
-                    <Input placeholder="Сколько лет" type="number" />
+                    <Input name="email" placeholder="example@email.com" type="email" required />
                   </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
-                    Телефон
-                  </label>
-                  <Input placeholder="+7 (999) 123-45-67" />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
-                    Email
-                  </label>
-                  <Input placeholder="example@email.com" type="email" />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
-                    Текущий уровень по математике
-                  </label>
-                  <Textarea placeholder="Расскажите о ваших знаниях, трудностях, целях" />
-                </div>
-                
-                <Separator />
-                
-                <div className="text-center space-y-4">
-                  <Button size="lg" className="w-full bg-gradient-to-r from-orange-500 to-turquoise-500 hover:from-orange-600 hover:to-turquoise-600 text-white font-open-sans text-lg px-8 py-3">
-                    <Icon name="Send" className="mr-2" size={20} />
-                    Отправить заявку
-                  </Button>
-                  <p className="text-sm text-gray-500 font-open-sans">
-                    Я отвечу в течение 24 часов
-                  </p>
-                </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2 font-open-sans">
+                      Текущий уровень по математике
+                    </label>
+                    <Textarea name="message" placeholder="Расскажите о ваших знаниях, трудностях, целях" required />
+                  </div>
+                  
+                  <Separator />
+                  
+                  <div className="text-center space-y-4">
+                    <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-orange-500 to-turquoise-500 hover:from-orange-600 hover:to-turquoise-600 text-white font-open-sans text-lg px-8 py-3">
+                      <Icon name="Send" className="mr-2" size={20} />
+                      Отправить заявку
+                    </Button>
+                    <p className="text-sm text-gray-500 font-open-sans">
+                      Я отвечу в течение 24 часов
+                    </p>
+                  </div>
+                </form>
               </CardContent>
             </Card>
           </div>
